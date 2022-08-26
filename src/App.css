@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none !important; }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a,
+img,
+span,
+time,
+input,
+button { display: block; }
+
+img { height: auto; }
+
+input,
+button {
+  background: none !important;
+  
+  border-inline: none;
+  outline: none !important;
+  font: inherit !important;
+}
+
+input { width: 100%; border-color: none !important; border: none !important; }
+
+button { cursor: pointer; }
+
+ion-icon { pointer-events: none; }
+
+address { font-style: normal; }
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(280, 11%, 11%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+:focus-visible { outline-offset: 4px; }
+
+
+
+

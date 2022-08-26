@@ -1,0 +1,147 @@
+
+
+
+
+
+
+.section-wrapper {
+    position: relative;
+    background-color: var(--white);
+    z-index: 1;
+  }
+  
+  .section-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    background-image: url("../../images/section-wrapper-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  
+  .has-scrollbar {
+    display: flex !important;
+    gap: 20px;
+    overflow-x: auto;
+    padding-block-end: 50px !important;
+    scroll-snap-type: proximity;
+  }
+
+  
+  .has-scrollbar::-webkit-scrollbar { height: 10px; }
+  
+  .has-scrollbar::-webkit-scrollbar-track { outline: 3px solid var(--marigold);}
+  
+  .has-scrollbar::-webkit-scrollbar-thumb { background-color: var(--marigold);}
+  
+  .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px);}
+  
+
+
+  .section-subtitle,
+  .section-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  
+  .section-title::after {
+    content: url("../../images/title-underline.png");
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+
+  .scrollbar-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  
+  .card-banner { background-color: var(--light-gray-1); }
+  
+  .img-holder { aspect-ratio: 400px / 470px; }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  
+  .card-badge {
+    min-height: 30px;
+    color: var(--eerie-black-1);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    max-width: max-content;
+    display: grid;
+    align-items: center;
+    padding-inline: 20px;
+  }
+  
+
+  .card-badge::before { --skewX: -10deg; }
+  
+
+
+
+
+  
+
+  .latest-game .section-title { margin-block-end: 80px; }
+  
+  .latest-game .has-scrollbar {
+    margin-inline: -15px;
+    padding-inline: 15px;
+    scroll-padding-inline-start: 15px;
+  }
+  
+  .latest-game-card {
+    position: relative;
+    box-shadow: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.4);
+  }
+  
+  .latest-game-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsla(280, 37%, 8%, 0.9);
+    padding: 35px 25px;
+  }
+  
+  .latest-game-card .card-badge {
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+  }
+  
+  .latest-game-card .card-title {
+    margin-block-end: 12px;
+    transition:  0.25s ease;
+  }
+  
+  .latest-game-card .card-title:is(:hover, :focus) { color: hsla(42, 99%, 46%, 0.75); }
+  
+  .latest-game-card .card-price {
+    color: hsl(0, 0%, 78%);
+    font-size:  1.3rem;
+    font-weight: 600;
+  }
+  
+  .latest-game-card .card-price .span { margin-inline-start: 5px; }
+  
+  

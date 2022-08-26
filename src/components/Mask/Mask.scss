@@ -1,0 +1,51 @@
+
+  .has-scrollbar {
+    display: flex !important;
+    gap: 20px;
+    overflow-x: auto;
+    padding-block-end: 50px !important;
+    scroll-snap-type: proximity;
+  }
+
+  
+  .has-scrollbar::-webkit-scrollbar { height: 10px; }
+  
+  .has-scrollbar::-webkit-scrollbar-track { outline: 3px solid var(--marigold);}
+  
+  .has-scrollbar::-webkit-scrollbar-thumb { background-color: var(--marigold);}
+  
+  .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px);}
+  
+
+
+
+.brand {
+    --section-padding: 60px;
+    background-image:  radial-gradient(circle, hsl(250, 7%, 17%), hsl(250, 11%, 11%));
+    
+  }
+  
+  .brand .has-scrollbar { padding-block-end: 0; }
+  
+  .brand .has-scrollbar::-webkit-scrollbar { display: flex; }
+  
+  .brand-item {
+    min-width: calc(50% - 10px);
+    scroll-snap-align: start;
+  }
+  
+  .brand-item > img { margin-inline: auto; }
+
+  
+
+  @media (min-width: 576px) {
+  
+    .brand-item { min-width: calc(33.33% - 13.33px); }
+    }
+
+
+  @media (min-width: 992px) {
+
+  .brand-item { min-width: calc(20% - 16px); }
+  
+  }

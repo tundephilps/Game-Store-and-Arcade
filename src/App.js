@@ -12,12 +12,14 @@ import "./Index.css"
 import "./Styles.scss"
 import Newrelease from './components/Releases/Newrelease';
 import Featured from './components/Featured/Featured';
+import Nav from './components/Header/Drop.js';
 
 function App () {
     return (
         
             <div>
             <Header />
+            
             <Hero />
             <Mask />
             <Release />

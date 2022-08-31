@@ -1,8 +1,9 @@
 import React from 'react'
 import { FaLinkedin, FaFacebook, FaTwitter, FaPinterest, FaCartPlus, FaSearch } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
-import { CgClose } from "react-icons/cg"
+//import { FiMenu } from "react-icons/fi";
+//import { CgClose } from "react-icons/cg"
 import "./Header.scss";
+import Drop from './Drop';
 
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
 
 
   return (
+    
     <header class="header">
 
     <div class="header-top">
@@ -55,11 +57,11 @@ const Header = () => {
 
       </div>
     </div>
-
+    
     <div class="header-bottom skewBg" data-header>
       <div class="container">
 
-        <a href="#" class="logo">Optimum Games</a>
+        <a href="#" className='logo hover:text-yellow-800 w-[100%]'>Optimum Games</a>
 
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
@@ -102,47 +104,25 @@ const Header = () => {
           <button class="search-btn" aria-label="open search" data-search-toggler>
             <FaSearch />
           </button>
+       
 
-          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-            <FiMenu class="" />
-           
-          </button>
 
         </div>
 
+        <Drop />
+        
+            
+        
       </div>
-    </div>
+     
+      </div>
 
+  
   </header>
-
-
+  
+ 
   )
+ 
 }
 
 export default Header;
-
-/*
-window.onload = function(){
-    const navbar = document.querySelector("[data-navbar]");
-    const navbarLinks = document.querySelectorAll("[data-nav-link]");
-    const navbarToggler = document.querySelector("[data-nav-toggler]");
-
-
-
-
-    navbarToggler.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-        this.classList.toggle("active");
-      });
-    
-      
-      for (let i = 0; i < navbarLinks.length; i++) {
-        navbarLinks[i].addEventListener("click", function () {
-          navbar.classList.remove("active");
-          navbarToggler.classList.remove("active");
-        });
-      }
-      
-    }
-
-*/

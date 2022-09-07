@@ -5,10 +5,13 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaPinterest, FaCartPlus, FaSearch } 
 import "./Header.scss";
 import Drop from './Drop';
 
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom"
 
-const Header = () => {
+
+const Header = ({ cartItem }) => {
 
 
+  let navigate = useNavigate();
 
 
   return (
@@ -67,7 +70,7 @@ const Header = () => {
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+              <a href="/" class="navbar-link skewBg" data-nav-link>Home</a>
             </li>
 
             <li class="navbar-item">
@@ -87,7 +90,7 @@ const Header = () => {
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+              <a href="Arcade" class="navbar-link skewBg" data-nav-link>Arcade</a>
             </li>
 
           </ul>
@@ -95,13 +98,13 @@ const Header = () => {
 
         <div class="header-actions">
 
-          <button class="cart-btn" aria-label="cart">
+          <button href onClick={() => {navigate("/Cart");}} class="cart-btn" aria-label="cart">
            <FaCartPlus />
 
-            <span class="cart-badge">0</span>
+            <span class="cart-badge">{cartItem.length === 0 ? "" : cartItem.length}</span>
           </button>
 
-          <button class="search-btn" aria-label="open search" data-search-toggler>
+          <button class="search-btn" aria-label="open search" data-search-toggler cartItem={cartItem}>
             <FaSearch />
           </button>
        

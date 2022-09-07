@@ -2,7 +2,7 @@ import React from 'react'
 import Live from '../Live/Live'
 import "./Release.scss"
 
-const Products = () => {
+const Release = () => {
   return (
    
 
@@ -21,7 +21,7 @@ const Products = () => {
         <ul class="has-scrollbar">
         <div className='grid-cols-1 lg:grid-cols-3 mt-[4rem]'>
            
-           <ul className=' flex flex-1 flex-row gap-x-[3rem]  has-scrollbar'>
+           <ul className='  flex-1 flex-row gap-x-[3rem]  has-scrollbar'>
 
 <li class="scrollbar-item">
  <div class="latest-game-card">
@@ -118,4 +118,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Release;

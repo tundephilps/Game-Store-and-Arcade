@@ -20,12 +20,12 @@ function Drop({options}) {
  {showOptions && (
    <div class="absolute right-0 mt-[29px] w-[25rem] origin-top-right rounded-md  font-primary bg-eerie shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
    <div class="py-1" role="none">
-     <a href="#" class="text-gray-700 block px-4 py-2 text-[3rem] hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-0">Home</a>
+     <a href="/" class="text-gray-700 block px-4 py-2 text-[3rem] hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-0">Home</a>
      <a href="#" class="text-gray-700 block px-4 py-2 text-[3rem]  hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-1">Live</a>
      <a href="#" class="text-gray-700 block px-4 py-2 text-[3rem]  hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-2">Features</a>
      
      <a href="#" class="text-gray-700 block px-4 py-2 text-[3rem]  hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-2">Shop</a>
-     <a href="#" class="text-gray-700 block px-4 py-2 text-[3rem]  hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-2">Arcade</a>
+     <a href="/Arcade" class="text-gray-700 block px-4 py-2 text-[3rem]  hover:text-yellow-800" role="menuitem" tabindex="-1" id="menu-item-2">Arcade</a>
      <form action="#" role="none">
        <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-[2rem]" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
      </form>

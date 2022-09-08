@@ -2,7 +2,7 @@ const ShopData = {
     productItems: [
       {
         id: 1,
-        Category: "Tools",
+        Category: "Console",
         cover: "./images/ProductN64.jpg",
         Product: "Nintendo 64",
         price: 90,
@@ -45,6 +45,23 @@ const ShopData = {
         Product: "Nintendo Wii",
         price: 740,
       },
+      {
+        
+        id: 7,
+        Category: "Mechs",
+        cover: "./images/shop-img-2.jpg",
+        Product: "Gamer Wear",
+        price: 120,
+      },
+      {
+        
+        id: 8,
+        Category: "Tools",
+        cover: "./images/shop-img-1.jpg",
+        Product: "Xbox Controller",
+        price: 230,
+      },
+      
     ],
   }
   export default ShopData;

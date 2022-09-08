@@ -4,7 +4,7 @@ const ShopData = {
         id: 1,
         Category: "Tools",
         cover: "./images/ProductN64.jpg",
-        Product: "Shoes",
+        Product: "Nintendo 64",
         price: 90,
       },
       {
@@ -12,7 +12,7 @@ const ShopData = {
         id: 2,
         Category: "Console",
         cover: "./images/Productplaystation5.webp",
-        Product: "Shoes",
+        Product: "Playstation 5",
         price: 350,  
     },
       {
@@ -20,7 +20,7 @@ const ShopData = {
         id: 3,
         Category: "Mechs",
         cover: "./images/shop-img-3.jpg",
-        Product: "Shoes",
+        Product: "Graphics Card",
         price: 120,
       },
       {
@@ -28,14 +28,14 @@ const ShopData = {
         id: 4,
         Category: "Hardware",
         cover: "./images/shop-img-4.jpg",
-        Product: "Shoes",
+        Product: "VR Headset",
         price: 230,
       },
       {
         id: 5,
         Category: "Mech",
         cover: "./images/Productxbox.jpg",
-        Product: "Shoes",
+        Product: "X bos",
         price: 550,
       },
       {

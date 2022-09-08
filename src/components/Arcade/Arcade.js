@@ -1,10 +1,21 @@
 import React from 'react'
+import Categories from "./Categories"
+import "./Arcade.scss"
+import SliderHome from "./Slider"
 
 const Arcade = () => {
-  return (
-    <div>
-        <h1>This is an Arcade</h1>
-    </div>
+
+
+    return (
+    
+    <>
+      <section className='home' id='Game'>
+        <div className='container d_flex'>
+          <Categories />
+          <SliderHome />
+        </div>
+      </section>
+    </>
   )
 }
 
